@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
 
   getRecipe(String query) async {
     String url =
-        "https://api.edamam.com/search?q=$query&app_id=07993c6f&app_key=8a81a251506cda519c727cbec91e9c6a";
+        "https://api.edamam.com/search?q=$query&app_id={api_id}&app_key={api_key}";
 
     Response response = await get(
       Uri.parse(url),
